@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <video loop autoplay muted><source src="phone.mp4" type="video/mp4"></video>
+    
+    
+    
+    <div class="calculator">
+        
+        <div class="display">
+            <input id="display2" type="text" disabled placeholder="0">
+        </div>
+        <div class="buttons">
+            <button type="button" id="btn" value="AC" onclick="clearScreen()">AC</button>
+            <button id="" value="+/-" onclick="display('1')">+/-</button>
+            <button id="" value="%" onclick="display('%')">%</button>
+            <button id="bolme" value="/" onclick="display('/')">&divide</button>
+            <button id="" value="7" onclick="display('7')">7</button>
+            <button id="" value="8" onclick="display('8')">8</button>
+            <button id="" value="9" onclick="display('9')">9</button>
+            <button id="carpma" value="x" onclick="display('*')" >x</button>
+            <button id="" value="4" onclick="display('4')">4</button>
+            <button id="" value="5" onclick="display('5')">5</button>
+            <button id="" value="6" onclick="display('6')">6</button>
+            <button id="cikarma" value="-" onclick="display('-')">-</button>
+            <button id="" value="1" onclick="display('1')">1</button>
+            <button id="" value="2" onclick="display('2')">2</button>
+            <button id="" value="3" onclick="display('3')">3</button>
+            <button id="toplama" value="+" onclick="display('+')">+</button>
+            <button id="zero" value="0" onclick="display('0')">0</button>
+            <button id="" value="," onclick="display('.')">,</button>
+            <button id="result" value="="onclick="calculate()" >=</button>
+
+
+
+        </div>
+
+
+    </div>
+    
+
+
+
+    <script src="main.js" ></script>
+</body>
+</html>

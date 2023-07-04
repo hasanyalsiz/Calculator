@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body video {
+    background-position: center;
+    position: absolute;
+    height: 1100px;
+    width: 50%;
+    object-fit: fill;
+    z-index: -1;
+
+
+}
+
+body {
+    background-color: #E0FFFF;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.calculator {
+    margin-top: 57px;
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    /* border:5px solid rgb(231, 222, 222); */
+    width: 300px;
+    height: 570px;
+    border-radius: 20px;
+    display: flex;
+    top: 10px;
+
+
+}
+
+.display {
+
+    outline: none;
+    border: none;
+    margin-top: 60px;
+    width: 100%;
+    /* background-color: white;     */
+
+}
+
+.display input {
+    border: none;
+    background-color: black;
+    outline: none;
+    font-size: 55px;
+    width: 80%;
+    height: 100px;
+    /* margin-left: 35px;
+    margin-bottom: 50px; */
+    margin: 30px 50px 30px 35px;
+    border-radius: 20px;
+    text-align: right;
+    color: white;
+
+}
+
+.buttons {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+
+}
+
+.buttons button {
+    cursor: pointer;
+    font-size: 30px;
+    height: 45px;
+    border-radius: 30px;
+    /* box-shadow: -1px -1px 2px #ccc , 1px 1px 3px #7c6e6e; */
+    background-color: rgb(31, 27, 27);
+    color: white;
+}
+
+button:nth-child(4n),
+button:last-child {
+    background-color: rgb(218, 171, 18);
+
+}
+
+button:nth-child(-n+3) {
+    background-color: rgb(116, 114, 109);
+}
+
+#zero {
+    grid-column: span 2;
+}
