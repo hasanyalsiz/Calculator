@@ -1,5 +1,5 @@
-# calculator
+# Calculator
 
-Basic calculator
+Basic Calculator
 
 ![](calculator.gif)
